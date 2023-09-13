@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>700sil | Главная страница</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container container__gap">
+        <div class="row d-flex align-items-center">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="700sil">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-12">
+                <form class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M25.375 24.1378L18.767 17.5298C20.355 15.6234 21.1468 13.1783 20.9779 10.703C20.8089 8.22764 19.6921 5.91276 17.8599 4.23987C16.0276 2.56698 13.6209 1.66488 11.1405 1.72124C8.66007 1.7776 6.29685 2.78808 4.54246 4.54246C2.78808 6.29685 1.7776 8.66007 1.72124 11.1405C1.66488 13.6209 2.56698 16.0276 4.23987 17.8599C5.91276 19.6921 8.22764 20.8089 10.703 20.9779C13.1783 21.1468 15.6234 20.355 17.5298 18.767L24.1378 25.375L25.375 24.1378ZM3.50004 11.375C3.50004 9.81751 3.9619 8.29496 4.82722 6.99992C5.69253 5.70489 6.92244 4.69553 8.36141 4.09949C9.80038 3.50345 11.3838 3.3475 12.9114 3.65136C14.439 3.95521 15.8422 4.70524 16.9435 5.80657C18.0448 6.90791 18.7949 8.3111 19.0987 9.8387C19.4026 11.3663 19.2466 12.9497 18.6506 14.3887C18.0546 15.8276 17.0452 17.0575 15.7502 17.9229C14.4551 18.7882 12.9326 19.25 11.375 19.25C9.28717 19.2477 7.28548 18.4173 5.80913 16.9409C4.33279 15.4646 3.50236 13.4629 3.50004 11.375Z"
+                              fill="black"/>
+                    </svg>
+                    <input class="search__input" type="search" placeholder="Найти">
+                </form>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-9 col-9">
+                <div class="tel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M22.68 15.1669C22.4233 15.1669 22.155 15.0853 21.8983 15.0269C21.3786 14.9124 20.8678 14.7603 20.37 14.5719C19.8288 14.375 19.2338 14.3852 18.6997 14.6006C18.1655 14.816 17.7299 15.2213 17.4767 15.7386L17.22 16.2636C16.0837 15.6315 15.0395 14.8464 14.1167 13.9303C13.2006 13.0074 12.4155 11.9632 11.7833 10.8269L12.2733 10.5003C12.7906 10.247 13.1959 9.81137 13.4113 9.27723C13.6267 8.74308 13.6369 8.14815 13.44 7.60692C13.2548 7.10808 13.1028 6.59752 12.985 6.07859C12.9267 5.82192 12.88 5.55359 12.845 5.28525C12.7033 4.46348 12.2729 3.71929 11.6312 3.1867C10.9895 2.65411 10.1788 2.36813 9.345 2.38025H5.845C5.3422 2.37553 4.84429 2.4792 4.38516 2.68421C3.92603 2.88921 3.51646 3.19073 3.18433 3.56825C2.8522 3.94577 2.60532 4.39041 2.46048 4.87192C2.31564 5.35343 2.27625 5.86049 2.345 6.35859C2.96652 11.2462 5.1987 15.7874 8.68892 19.265C12.1791 22.7425 16.7285 24.9582 21.6183 25.5619H22.0617C22.922 25.5632 23.7526 25.2475 24.395 24.6753C24.7641 24.3451 25.0589 23.9405 25.26 23.488C25.4612 23.0355 25.564 22.5454 25.5617 22.0503V18.5503C25.5474 17.7399 25.2523 16.9596 24.7267 16.3425C24.2012 15.7255 23.4778 15.31 22.68 15.1669ZM23.2633 22.1669C23.2631 22.3326 23.2276 22.4963 23.1592 22.6471C23.0908 22.798 22.9911 22.9326 22.8667 23.0419C22.7367 23.1551 22.5843 23.2396 22.4194 23.2898C22.2546 23.3401 22.081 23.355 21.91 23.3336C17.5407 22.7734 13.4823 20.7745 10.3748 17.6523C7.26739 14.53 5.28781 10.4621 4.74833 6.09025C4.72976 5.91936 4.74603 5.74647 4.79616 5.58204C4.8463 5.41761 4.92924 5.26505 5.04 5.13359C5.14932 5.00914 5.2839 4.9094 5.43477 4.84101C5.58564 4.77261 5.74935 4.73713 5.915 4.73692H9.41499C9.6863 4.73088 9.95122 4.81961 10.1642 4.98784C10.3771 5.15606 10.5247 5.39325 10.5817 5.65859C10.6283 5.97748 10.6867 6.29247 10.7567 6.60359C10.8914 7.21859 11.0708 7.82296 11.2933 8.41192L9.65999 9.17025C9.52034 9.23433 9.39472 9.32536 9.29035 9.43811C9.18597 9.55087 9.1049 9.68314 9.05178 9.82731C8.99866 9.97149 8.97455 10.1247 8.98082 10.2783C8.98709 10.4318 9.02363 10.5826 9.08833 10.7219C10.7674 14.3185 13.6584 17.2095 17.255 18.8886C17.539 19.0053 17.8576 19.0053 18.1417 18.8886C18.2872 18.8365 18.4209 18.7561 18.535 18.652C18.6492 18.5478 18.7415 18.422 18.8067 18.2819L19.53 16.6486C20.1331 16.8643 20.7487 17.0435 21.3733 17.1853C21.6844 17.2553 21.9994 17.3136 22.3183 17.3603C22.5837 17.4172 22.8209 17.5648 22.9891 17.7778C23.1573 17.9907 23.246 18.2556 23.24 18.5269L23.2633 22.1669Z"
+                              fill="#212121"/>
+                    </svg>
+                    <a class="link tel__text d-md-block" href="tel:+79952391000">+7 (995) 239 10-00</a>
+                </div>
+
+            </div>
+            <div class="nav-container d-md-none col-xl-2 col-md-1 col-lg-2 col-sm-3 col-3">
+                    <div class="wrap">
+                        <input class="hamburger checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-none d-md-block menu-collapse">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                Каталог шин
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="first" id="first">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="offer">
+                    <div class="left">
+                        <h1 class="offer__title">
+                            Качественные грузовые шины <span>оптом</span>
+                        </h1>
+                        <p class="offer__text">
+                            Мы заботимся о безопасности и комфорте наших клиентов, поэтому предлагаем только проверенные
+                            временем и качеством шины
+                        </p>
+                        <button class="btn-comp offer__btn" type="button">Перейти в каталог</button>
+                    </div>
+                    <div class="right">
+                        <div class="bg">
+                            <img class='image__bg' src="img/bg_first%20screen.png" alt="truck">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block__triangle">
+
+    </div>
+</section>
+<section class="benefits">
+    <div class="container">
+        <div class="row align-items-center" >
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="benefit__card">
+                    <h2 class="benefit__title">Более 100т</h2>
+                    <p class="benefit__text">
+                        Проданных шин
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="benefit__card">
+                    <h2 class="benefit__title">5</h2>
+                    <p class="benefit__text">
+                        Лет на рынке
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="benefit__card">
+                    <h2 class="benefit__title">Более 200</h2>
+                    <p class="benefit__text">
+                        Сотрудников
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="benefit__card">
+                    <h2 class="benefit__title">20</h2>
+                    <p class="benefit__text">
+                        Филиалов по всей России
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <h2 class="about__title">
+                    Кто мы
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="about__wrapper">
+                    <p class="about__text">
+                        Мы - компания, которая занимается продажей качественных грузовых шин. Наша миссия - обеспечить безопасность и комфорт наших клиентов на дороге, предоставляя только проверенные временем и качеством шины.
+                    </p>
+                    <p class="about__text">
+                        Наши шины проходят тщательный контроль качества и проверку на износостойкость, что гарантирует долгий срок службы и надежность на дороге.
+                    </p>
+                    <p class="about__text">
+                        Мы стремимся обеспечить нашим клиентам только лучшие условия для уверенного и комфортного путешествия.
+                    </p>
+                    <a href="catalog.html" class="link about__link">Наш каталог шин</a>
+                </div>
+
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="about__brands">
+                    <h4>Работаем с брендами</h4>
+                    <div class="about__images">
+                        <img width="281" src="img/haida.png" alt="haida logo">
+                        <img width="429" src="img/copartner.png" alt="copartner logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="advantages" id="advantages">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <h2 class="advantages__title">Почему именно наши шины</h2>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-xl-5 col-lg-5">
+                <div class="tire__img">
+                    <img src="img/tire.png" alt="tire" class="advantages__img">
+                    <img class="tiredop" src="img/tiredop.png" alt="dop">
+                    <img class="light" src="img/light.png" alt="dop">
+                </div>
+
+
+            </div>
+            <div class="col-xl-7 col-lg-7">
+                <div class="advantages__list">
+                    <div class="advantages__item">
+                        <h4 class="advantages__subtitle">
+                            Температурный режим
+                        </h4>
+                        <p class="advantage__text">
+                            Шины выдерживают любые температурные условия и обеспечивают безопасность на дороге
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <h4 class="advantages__subtitle">
+                            Повышенный уровень сцепления с дорогой
+                        </h4>
+                        <p class="advantage__text">
+                            Специальный состав резиновой смеси и оригинальный рисунок протектора обеспечивает надежное сцепление с трассой при движении на любой скорости
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <h4 class="advantages__subtitle">
+                            Эластичный и надежный протектор
+                        </h4>
+                        <p class="advantage__text">
+                            Технические характеристики покрышек подразумевают хорошую устойчивость грузовых шин к различным температурным перепадам
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="jobs" id="jobs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <h2 class="jobs__title">
+                    Шины под разные виды работы
+                </h2>
+            </div>
+        </div>
+        <div class="row row__gap">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                <div class="jobs__item">
+                    <img src="img/Build.jpg" alt="Truck for Build" class="jobs__img">
+                    <div class="jobs__overlay">
+                        <p class="jobs__text">
+                            Стройка
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                <div class="jobs__item">
+                    <img src="img/Carrier.jpg" alt="Truck for Carrier" class="jobs__img">
+                    <div class="jobs__overlay">
+                        <p class="jobs__text">
+                            Карьер
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                <div class="jobs__item">
+                    <img src="img/Magistral.jpg" alt="Truck for Magistral" class="jobs__img">
+                    <div class="jobs__overlay">
+                        <p class="jobs__text">
+                            Магистраль
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popular">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="popular__title">
+                   Популярные товары
+                </h2>
+            </div>
+        </div>
+        <div class="row row__gap">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                <div class="popular__card">
+                    <img src="img/popular.png" alt="tire" class="popular__img">
+                    <div class="popular__brand">
+                        Copartner
+                    </div>
+                    <h4 class="popular__subtitle">
+                        CP169
+                    </h4>
+                    <div class="popular__char">
+                        <div class="popular__tag">215
+                            <span class="tooltiptext">Ширина</span>
+                        </div>
+                        <div class="popular__tag">70
+                            <span class="tooltiptext">Профиль</span>
+                        </div>
+                        <div class="popular__tag">R17.5
+                            <span class="tooltiptext">Диаметр</span>
+                        </div>
+                        <div class="popular__tag">16PR
+                            <span class="tooltiptext">Слойность</span>
+                        </div>
+                        <div class="popular__tag">143/141
+                            <span class="tooltiptext">Индекс нагрузки</span>
+                        </div>
+                        <div class="popular__tag">M
+                            <span class="tooltiptext">Индекс скорости</span>
+                        </div>
+                    </div>
+                    <button class="btn-comp popular__btn">Запросить цену</button>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                <div class="popular__card">
+                    <img src="img/popular.png" alt="tire" class="popular__img">
+                    <div class="popular__brand">
+                        Copartner
+                    </div>
+                    <h4 class="popular__subtitle">
+                        CP169
+                    </h4>
+                    <div class="popular__char">
+                        <div class="popular__tag">215
+                            <span class="tooltiptext">Ширина</span>
+                        </div>
+                        <div class="popular__tag">70
+                            <span class="tooltiptext">Профиль</span>
+                        </div>
+                        <div class="popular__tag">R17.5
+                            <span class="tooltiptext">Диаметр</span>
+                        </div>
+                        <div class="popular__tag">16PR
+                            <span class="tooltiptext">Слойность</span>
+                        </div>
+                        <div class="popular__tag">143/141
+                            <span class="tooltiptext">Индекс нагрузки</span>
+                        </div>
+                        <div class="popular__tag">M
+                            <span class="tooltiptext">Индекс скорости</span>
+                        </div>
+                    </div>
+                    <button class="btn-comp popular__btn">Запросить цену</button>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                <div class="popular__card">
+                    <img src="img/popular.png" alt="tire" class="popular__img">
+                    <div class="popular__brand">
+                        Copartner
+                    </div>
+                    <h4 class="popular__subtitle">
+                        CP169
+                    </h4>
+                    <div class="popular__char">
+                        <div class="popular__tag">215
+                            <span class="tooltiptext">Ширина</span>
+                        </div>
+                        <div class="popular__tag">70
+                            <span class="tooltiptext">Профиль</span>
+                        </div>
+                        <div class="popular__tag">R17.5
+                            <span class="tooltiptext">Диаметр</span>
+                        </div>
+                        <div class="popular__tag">16PR
+                            <span class="tooltiptext">Слойность</span>
+                        </div>
+                        <div class="popular__tag">143/141
+                            <span class="tooltiptext">Индекс нагрузки</span>
+                        </div>
+                        <div class="popular__tag">M
+                            <span class="tooltiptext">Индекс скорости</span>
+                        </div>
+                    </div>
+                    <button class="btn-comp popular__btn">Запросить цену</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="popular__links">
+                    <a href="catalog.html" class="link popular__link">Посмотреть весь каталог</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="feedback__card">
+                    <h2 class="feedback__title">
+                        Нужна помощь с выбором?
+                    </h2>
+                    <div class="feedback__wrapper">
+                        <form action="/" class="feedback__form">
+                            <p class="feedback__text">
+                                Оставьте свой номер телефона и мы поможем вам выбрать шины
+                            </p>
+                            <div class="feedback__item">
+                                <input id="name" class="feedback__input" type="text" placeholder="Имя">
+
+                            </div>
+                            <div class="feedback__item">
+                                <input id="tel" class="feedback__input" type="text" placeholder="Телефон">
+
+                            </div>
+                            <div class="feedback__item">
+                                <input id="mail" class="feedback__input" type="text" placeholder="E-mail">
+
+                            </div>
+                            <p class="feedback__subtitle">Нажимая на кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <b>политикой конфиденциальности</b></p>
+                            <button class="btn-comp feedback__btn" type="submit">Оставить заявку</button>
+                        </form>
+                        <img class="feedback__img" src="img/feedback_tire.png" alt="feedback tire">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer" id="footer">
+    <div class="container container__gap">
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-3 col-md-12">
+                <div class="footer__logo">
+                    <img src="img/footogo.png" alt="logo" class="footer__img">
+                    <p class="footer__def">2023 | Все права защищены</p>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                Каталог шин
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="link menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-3 col-md-12">
+                <p class="footer__title">
+                    Наши контакты
+                </p>
+                <div class="footer__contacts">
+                    <div class="footer__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M22.68 15.1669C22.4233 15.1669 22.155 15.0853 21.8983 15.0269C21.3786 14.9124 20.8678 14.7603 20.37 14.5719C19.8288 14.375 19.2338 14.3852 18.6997 14.6006C18.1655 14.816 17.7299 15.2213 17.4767 15.7386L17.22 16.2636C16.0837 15.6315 15.0395 14.8464 14.1167 13.9303C13.2006 13.0074 12.4155 11.9632 11.7833 10.8269L12.2733 10.5003C12.7906 10.247 13.1959 9.81137 13.4113 9.27723C13.6267 8.74308 13.6369 8.14815 13.44 7.60692C13.2548 7.10808 13.1028 6.59752 12.985 6.07859C12.9267 5.82192 12.88 5.55359 12.845 5.28525C12.7033 4.46348 12.2729 3.71929 11.6312 3.1867C10.9895 2.65411 10.1788 2.36813 9.345 2.38025H5.845C5.3422 2.37553 4.84429 2.4792 4.38516 2.68421C3.92603 2.88921 3.51646 3.19073 3.18433 3.56825C2.8522 3.94577 2.60532 4.39041 2.46048 4.87192C2.31564 5.35343 2.27625 5.86049 2.345 6.35859C2.96652 11.2462 5.1987 15.7874 8.68892 19.265C12.1791 22.7425 16.7285 24.9582 21.6183 25.5619H22.0617C22.922 25.5632 23.7526 25.2475 24.395 24.6753C24.7641 24.3451 25.0589 23.9405 25.26 23.488C25.4612 23.0355 25.564 22.5454 25.5617 22.0503V18.5503C25.5474 17.7399 25.2523 16.9596 24.7267 16.3425C24.2012 15.7255 23.4778 15.31 22.68 15.1669ZM23.2633 22.1669C23.2631 22.3326 23.2276 22.4963 23.1592 22.6471C23.0908 22.798 22.9911 22.9326 22.8667 23.0419C22.7367 23.1551 22.5843 23.2396 22.4194 23.2898C22.2546 23.3401 22.081 23.355 21.91 23.3336C17.5407 22.7734 13.4823 20.7745 10.3748 17.6523C7.26739 14.53 5.28781 10.4621 4.74833 6.09025C4.72976 5.91936 4.74603 5.74647 4.79616 5.58204C4.8463 5.41761 4.92924 5.26505 5.04 5.13359C5.14932 5.00914 5.2839 4.9094 5.43477 4.84101C5.58564 4.77261 5.74935 4.73713 5.915 4.73692H9.41499C9.6863 4.73088 9.95122 4.81961 10.1642 4.98784C10.3771 5.15606 10.5247 5.39325 10.5817 5.65859C10.6283 5.97748 10.6867 6.29247 10.7567 6.60359C10.8914 7.21859 11.0708 7.82296 11.2933 8.41192L9.65999 9.17025C9.52034 9.23433 9.39472 9.32536 9.29035 9.43811C9.18597 9.55087 9.1049 9.68314 9.05178 9.82731C8.99866 9.97149 8.97455 10.1247 8.98082 10.2783C8.98709 10.4318 9.02363 10.5826 9.08833 10.7219C10.7674 14.3185 13.6584 17.2095 17.255 18.8886C17.539 19.0053 17.8576 19.0053 18.1417 18.8886C18.2872 18.8365 18.4209 18.7561 18.535 18.652C18.6492 18.5478 18.7415 18.422 18.8067 18.2819L19.53 16.6486C20.1331 16.8643 20.7487 17.0435 21.3733 17.1853C21.6844 17.2553 21.9994 17.3136 22.3183 17.3603C22.5837 17.4172 22.8209 17.5648 22.9891 17.7778C23.1573 17.9907 23.246 18.2556 23.24 18.5269L23.2633 22.1669Z"
+                                  fill="white"/>
+                        </svg>
+                        <a class="link footer__link" href="tel:+79952391000">+7 (995) 239 10-00</a>
+                    </div>
+                    <div class="footer__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <path d="M22.6562 3.90625H2.34375C1.91162 3.90625 1.5625 4.25537 1.5625 4.6875V20.3125C1.5625 20.7446 1.91162 21.0938 2.34375 21.0938H22.6562C23.0884 21.0938 23.4375 20.7446 23.4375 20.3125V4.6875C23.4375 4.25537 23.0884 3.90625 22.6562 3.90625ZM21.6797 6.61133V19.3359H3.32031V6.61133L2.64648 6.08643L3.60596 4.85352L4.65088 5.6665H20.3516L21.3965 4.85352L22.356 6.08643L21.6797 6.61133ZM20.3516 5.66406L12.5 11.7676L4.64844 5.66406L3.60352 4.85107L2.64404 6.08398L3.31787 6.60889L11.6577 13.0933C11.8976 13.2796 12.1926 13.3807 12.4963 13.3807C12.8001 13.3807 13.0951 13.2796 13.335 13.0933L21.6797 6.61133L22.3535 6.08643L21.394 4.85352L20.3516 5.66406Z" fill="white"/>
+                        </svg>
+                        <a class="link footer__link" href="mailto:700sil@mail.ru"> 700sil@mail.ru</a>
+                    </div>
+                    <div class="footer__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21" fill="none">
+                            <path d="M8.49996 0.0839844C6.30418 0.0838746 4.1971 0.9504 2.63667 2.49523C1.07624 4.04005 0.188584 6.13832 0.166626 8.33398C0.166626 14.0423 7.51038 20.3965 7.82288 20.6673C8.01156 20.8287 8.25167 20.9174 8.49996 20.9174C8.74824 20.9174 8.98836 20.8287 9.17704 20.6673C9.54163 20.3965 16.8333 14.0423 16.8333 8.33398C16.8113 6.13832 15.9237 4.04005 14.3632 2.49523C12.8028 0.9504 10.6957 0.0838746 8.49996 0.0839844ZM8.49996 18.4694C6.76038 16.8132 2.24996 12.2194 2.24996 8.33398C2.24996 6.67638 2.90844 5.08667 4.08054 3.91457C5.25264 2.74246 6.84236 2.08398 8.49996 2.08398C10.1576 2.08398 11.7473 2.74246 12.9194 3.91457C14.0915 5.08667 14.75 6.67638 14.75 8.33398C14.75 12.1882 10.2395 16.8132 8.49996 18.4694Z" fill="white"/>
+                            <path d="M8.49996 4.25C7.77888 4.25 7.074 4.46382 6.47444 4.86443C5.87489 5.26504 5.40759 5.83444 5.13165 6.50063C4.85571 7.16682 4.78351 7.89988 4.92418 8.6071C5.06486 9.31432 5.41209 9.96395 5.92197 10.4738C6.43185 10.9837 7.08147 11.3309 7.78869 11.4716C8.49592 11.6123 9.22897 11.5401 9.89516 11.2641C10.5613 10.9882 11.1308 10.5209 11.5314 9.92135C11.932 9.3218 12.1458 8.61691 12.1458 7.89583C12.1458 6.9289 11.7617 6.00157 11.078 5.31784C10.3942 4.63411 9.4669 4.25 8.49996 4.25ZM8.49996 9.45833C8.19093 9.45833 7.88883 9.36669 7.63188 9.195C7.37493 9.02331 7.17466 8.77929 7.0564 8.49378C6.93814 8.20827 6.90719 7.8941 6.96748 7.591C7.02777 7.28791 7.17659 7.0095 7.39511 6.79098C7.61363 6.57246 7.89204 6.42365 8.19513 6.36336C8.49823 6.30307 8.81239 6.33401 9.0979 6.45227C9.38341 6.57053 9.62744 6.7708 9.79913 7.02776C9.97082 7.28471 10.0625 7.5868 10.0625 7.89583C10.0625 8.31023 9.89784 8.70766 9.60482 9.00069C9.31179 9.29371 8.91436 9.45833 8.49996 9.45833Z" fill="white"/>
+                        </svg>
+                        <p class="link footer__link footer__link_cp">Магадан, ул. Берзина д.12</p>
+                    </div>
+                    <button class="btn-comp footer__btn">Заказать звонок</button>
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-lg-9 col-md-12">
+                <img class="footer__map" src="img/map.jpg" alt="map">
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
