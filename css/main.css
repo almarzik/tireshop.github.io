@@ -142,6 +142,7 @@ button, button:hover, button:focus, button:active
     background: #EBEBEB;
     color: var(--main-black);
     font-size: 19px;
+    border-radius: 0px;
 }
 .menu__burger {
     display: none;
