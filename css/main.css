@@ -1164,7 +1164,7 @@ header input[type="checkbox"]:checked ~ .hamburgerer {
         padding: 19px 10px;
     }
     .feedback__item {
-        width: 226px;
+        width: 276px;
         margin: 10px auto;
     }
     .feedback__btn {
