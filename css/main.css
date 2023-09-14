@@ -349,7 +349,7 @@ button, button:hover, button:focus, button:active
 .about__link {
     border-bottom: 2px solid var(--main-accent);
     padding-bottom: 5px;
-    width: 170px;
+    width: 190px;
 
 }
 
